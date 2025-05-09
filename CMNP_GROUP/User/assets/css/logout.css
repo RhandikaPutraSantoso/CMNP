@@ -1,0 +1,101 @@
+/*==============================================
+    logout styles    
+==============================================*/
+/* Reset layout dan box model */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style utama halaman */
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #f0f0f0, #e6f2fa); /* Warna CMNP */
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Spinner animasi untuk indikator proses */
+  .spinner {
+    width: 60px;
+    height: 60px;
+    border: 6px solid #ddd;
+    border-top: 6px solid #0073b7; /* Biru khas CMNP */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Judul pesan logout */
+  h2 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+    animation: fadeIn 0.8s ease-in-out forwards;
+  }
+  
+  /* Animasi teks ketik (typing effect) */
+  .typing {
+    font-size: 1rem;
+    color: #555;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #555;
+    width: 0;
+    animation: typing 2.5s steps(30, end) forwards, blink 0.7s infinite;
+    animation-delay: 0.4s;
+  }
+  
+  /* Animasi rotasi spinner */
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  
+  /* Animasi ketik untuk teks */
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 230px; }
+  }
+  
+  /* Animasi blinking pada kursor teks */
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: #555; }
+  }
+  
+  /* Efek muncul perlahan untuk teks */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  /* Penyesuaian tampilan untuk layar kecil (responsif) */
+  @media (max-width: 500px) {
+    .spinner {
+      width: 40px;
+      height: 40px;
+      border-width: 5px;
+    }
+  
+    h2 {
+      font-size: 1.3rem;
+    }
+  
+    .typing {
+      font-size: 0.9rem;
+      width: 200px;
+    }
+  
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 200px; }
+    }
+  }
+  

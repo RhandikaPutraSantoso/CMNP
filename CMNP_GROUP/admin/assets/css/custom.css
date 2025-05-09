@@ -1,0 +1,377 @@
+/*==============================================
+    GENERAL  STYLES    
+==============================================*/
+body {
+    font-family: 'Open Sans', sans-serif; /* Mengatur jenis font untuk seluruh halaman */
+}
+
+#wrapper {
+    width: 100%; /* Lebar kontainer utama 100% */
+    background:#202020; /* Memberikan latar belakang gelap */
+}
+
+#page-wrapper {
+    padding: 15px 15px; /* Memberikan padding pada semua sisi */
+    min-height: 600px; /* Menetapkan tinggi minimum halaman */
+    background:#F3F3F3; /* Memberikan warna latar belakang abu-abu terang */
+}
+
+#page-inner {
+    width:100%; /* Lebar 100% */
+    margin:10px 20px 10px 0px; /* Margin sekitar kontainer */
+    background-color:#ffffff!important; /* Memberikan latar belakang putih dengan prioritas tinggi */
+    padding:10px; /* Padding di dalam kontainer */
+    min-height:1200px; /* Tinggi minimum untuk kontainer */
+}
+
+.text-center {
+    text-align:center; /* Menyusun teks ke tengah */
+}
+
+.no-boder {
+    border:1px solid #f3f3f3; /* Membuat border tipis berwarna abu-abu terang */
+}
+
+h2 {
+    color: #f00; /* Mengatur warna teks h2 menjadi merah */
+}
+
+h4 {
+    padding-top:10px; /* Memberikan padding di bagian atas h4 */
+}
+
+.square-btn-adjust {
+    border: 0px solid transparent; /* Menghapus border pada tombol */
+    -webkit-border-radius: 0px; /* Membuat sudut tombol menjadi tajam pada browser berbasis WebKit */
+    -moz-border-radius: 0px; /* Membuat sudut tombol menjadi tajam pada browser berbasis Gecko */
+    border-radius: 0px; /* Membuat sudut tombol menjadi tajam di semua browser */
+}
+
+p {
+    font-size:16px; /* Ukuran font untuk paragraf */
+    line-height:25px; /* Jarak antar baris teks */
+    padding-top:20px; /* Padding atas untuk paragraf */
+}
+
+/*==============================================
+    DASHBOARD STYLES    
+==============================================*/
+.panel-back {
+    background-color:#F8F8F8; /* Latar belakang abu-abu terang untuk panel */
+}
+
+.noti-box {
+    min-height: 100px; /* Tinggi minimum kotak notifikasi */
+    padding: 20px; /* Padding di dalam kotak notifikasi */
+}
+
+.noti-box .icon-box {
+    display: block; /* Menampilkan elemen secara blok */
+    float: left; /* Mengatur ikon ke kiri */
+    margin: 0 15px 10px 0; /* Margin kanan dan bawah */
+    width: 70px; /* Lebar ikon */
+    height: 70px; /* Tinggi ikon */
+    line-height: 75px; /* Menyelaraskan teks di tengah secara vertikal */
+    text-align: center; /* Menyelaraskan teks di tengah secara horizontal */
+    font-size: 40px; /* Ukuran font untuk ikon */
+}
+
+.text-box p {
+    margin: 0 0 3px; /* Margin pada paragraf dalam kotak teks */
+}
+
+.main-text {
+    font-size: 25px; /* Ukuran font untuk teks utama */
+    font-weight:600; /* Bobot font tebal */
+}
+
+.set-icon {
+    -webkit-border-radius: 50px; /* Membuat ikon berbentuk bulat */
+    -moz-border-radius: 50px; /* Membuat ikon berbentuk bulat */
+    border-radius: 50px; /* Membuat ikon berbentuk bulat */
+}
+
+/* Warna latar belakang yang berbeda untuk ikon */
+.bg-color-green { background-color: #00CE6F; color: #fff; }
+.bg-color-blue { background-color: #A95DF0; color: #fff; }
+.bg-color-red { background-color: #DB0630; color: #fff; }
+.bg-color-brown { background-color: #B94A00; color: #fff; }
+
+.icon-box-right {
+    display: block; /* Menampilkan elemen secara blok */
+    float: right; /* Mengatur ikon ke kanan */
+    margin: 0 15px 10px 0; /* Margin kanan dan bawah */
+    width: 70px; /* Lebar ikon */
+    height: 70px; /* Tinggi ikon */
+    line-height: 75px; /* Menyelaraskan teks di tengah secara vertikal */
+    text-align: center; /* Menyelaraskan teks di tengah secara horizontal */
+    font-size: 40px; /* Ukuran font untuk ikon */
+}
+
+.main-temp-back {
+    background: #8702A8; /* Latar belakang berwarna ungu */
+    color: #FFFFFF; /* Warna teks putih */
+    font-size: 16px; /* Ukuran font */
+    font-weight: 300; /* Bobot font ringan */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+}
+
+.main-temp-back .text-temp {
+    font-size: 40px; /* Ukuran font lebih besar untuk teks suhu */
+}
+
+/* Gaya footer dan tombol kembali */
+.back-dash {
+    padding:20px; /* Padding untuk tombol kembali */
+    font-size:20px; /* Ukuran font tombol kembali */
+    font-weight:500; /* Bobot font tombol kembali */
+    border-radius: 0px; /* Sudut tombol tetap tajam */
+    background-color:#2EA7EB; /* Latar belakang biru pada tombol */
+    color:#fff; /* Warna teks putih */
+}
+
+.back-dash p {
+    padding-top:16px; /* Padding atas untuk teks di dalam tombol */
+    font-size:13px; /* Ukuran font untuk teks di dalam tombol */
+    color:#fff; /* Warna teks putih */
+    line-height:25px; /* Jarak antar baris teks */
+    text-align:justify; /* Menyusun teks agar rata kiri dan kanan */
+}
+
+.back-footer-green {
+    background-color: #009B50; /* Latar belakang hijau pada footer */
+    border-top: 0px solid #fff; /* Menghapus border atas footer */
+}
+
+.back-footer-red {
+    background-color: #AF0000; /* Latar belakang merah pada footer */
+    border-top: 0px solid #fff; /* Menghapus border atas footer */
+}
+
+.color-bottom-txt {
+    color: #000000; /* Warna teks footer hitam */
+    font-size: 16px; /* Ukuran font */
+    line-height: 30px; /* Jarak antar baris */
+}
+
+/*==============================================
+    CHAT PANEL
+==============================================*/
+.chat-panel .panel-body {
+    height: 450px; /* Menetapkan tinggi panel obrolan */
+    overflow-y: scroll; /* Menambahkan scroll vertikal jika konten melebihi batas */
+}
+
+.chat-box {
+    margin: 0; /* Menghapus margin */
+    padding: 0; /* Menghapus padding */
+    list-style: none; /* Menghapus bullet pada daftar */
+}
+
+.chat-box li {
+    margin-bottom: 15px; /* Margin bawah untuk setiap item chat */
+    padding-bottom: 5px; /* Padding bawah untuk setiap item chat */
+    border-bottom: 1px dotted #808080; /* Garis bawah berbentuk titik */
+}
+
+.chat-box li.left .chat-body {
+    margin-left: 90px; /* Menambahkan margin kiri untuk chat kiri */
+}
+
+.chat-box li .chat-body p {
+    margin: 0; /* Menghapus margin pada paragraf dalam chat */
+    color: #8d8888; /* Warna teks abu-abu pada chat */
+}
+
+.chat-img>img {
+    margin-left:20px; /* Margin kiri pada gambar chat */
+}
+
+/*==============================================
+    MENU STYLES    
+==============================================*/
+.user-image {
+    margin: 25px auto; /* Margin otomatis kiri dan kanan dengan jarak atas 25px */
+    border-radius: 10px; /* Membuat gambar profil berbentuk bulat */
+    max-height:170px; /* Tinggi maksimal gambar */
+    max-width:170px; /* Lebar maksimal gambar */
+}
+
+.navbar-cls-top .navbar-brand {
+    color: #fff; /* Warna teks logo navbar putih */
+    background: #08103c; /* Latar belakang navbar gelap */
+    width: 260px; /* Lebar navbar */
+    text-align: center; /* Menyusun teks logo ke tengah */
+    height: 60px; /* Tinggi navbar */
+    font-size: 30px; /* Ukuran font untuk logo */
+    font-weight: 700; /* Bobot font tebal */
+}
+
+/* Gaya untuk menu aktif */
+.active-menu {
+    background-color:#233439!important; /* Memberikan warna latar belakang gelap pada menu aktif */
+}
+
+.arrow {
+    float: right; /* Mengatur ikon panah ke kanan */
+}
+
+.fa.arrow:before {
+    content: "\f104"; /* Simbol panah kiri untuk menu tertutup */
+}
+
+.active > a > .fa.arrow:before {
+    content: "\f107"; /* Simbol panah kanan untuk menu terbuka */
+}
+
+/*==============================================
+    MENU NAVIGATION STYLES
+==============================================*/
+.nav-second-level li,
+.nav-third-level li {
+    border-bottom: none !important; /* Menghapus garis bawah pada item menu */
+}
+
+.nav-second-level li a {
+    padding-left: 37px; /* Padding kiri untuk sub-menu tingkat kedua */
+}
+
+.nav-third-level li a {
+    padding-left: 55px; /* Padding kiri untuk sub-menu tingkat ketiga */
+}
+
+.sidebar-collapse , .sidebar-collapse .nav{
+    background:none; /* Menghapus latar belakang pada sidebar */
+}
+
+.sidebar-collapse .nav {
+    padding:0; /* Menghapus padding pada nav */
+}
+
+.sidebar-collapse .nav > li > a {
+    color:#c2fff2; /* Warna teks nav terang */
+    background:#202020; /* Latar belakang gelap pada nav */
+    text-shadow:none; /* Menghapus bayangan teks */
+}
+
+.sidebar-collapse > .nav > li > a {
+    padding:15px 10px; /* Padding pada item nav */
+}
+
+.sidebar-collapse > .nav > li {
+    border-bottom: 1px solid rgba(107, 108, 109, 0.19); /* Border bawah pada item nav */
+}
+
+.sidebar-collapse .nav > li > a:hover,
+.sidebar-collapse .nav > li > a:focus {
+    background:#0A0A0A; /* Mengubah latar belakang menu saat hover atau fokus */
+    outline:0; /* Menghapus outline pada elemen saat dipilih */
+}
+
+.nav-second-level > li > a:before,
+.nav-third-level > li > a:before {
+    content:""; /* Menghapus konten pada elemen sebelum */
+    display:block; /* Menampilkan elemen sebelum sebagai blok */
+    position:absolute; /* Menetapkan posisi elemen sebelum menjadi absolut */
+    left:20px; /* Menentukan jarak kiri elemen */
+    width:15px; /* Menetapkan lebar garis horizontal */
+    height:1px; /* Menetapkan tinggi garis menjadi 1px */
+    background:#ff0000; /* Warna garis merah */
+    top:20px; /* Posisi vertikal elemen sebelum */
+}
+
+.nav-second-level > li > a:after,
+.nav-third-level > li > a:after {
+    content:""; /* Menghapus konten pada elemen setelah */
+    display:block; /* Menampilkan elemen setelah sebagai blok */
+    position:absolute; /* Menetapkan posisi elemen setelah menjadi absolut */
+    left:20px; /* Menentukan jarak kiri elemen */
+    width:1px; /* Menetapkan lebar garis vertikal */
+    height:100%; /* Mengatur tinggi garis menjadi 100% dari kontainer */
+    background:#ff0000; /* Warna garis merah */
+    top:0px; /* Posisi vertikal elemen setelah */
+    z-index:10; /* Menetapkan urutan lapisan elemen agar lebih tinggi dari elemen lain */
+}
+
+.nav-second-level  > li:last-child > a:after,
+.nav-third-level  > li:last-child > a:after {
+    height:50%; /* Menetapkan tinggi garis vertikal pada item terakhir menjadi 50% */
+}
+
+.nav-third-level > li > a:after,
+.nav-third-level > li > a:before {
+    left:40px; /* Menentukan posisi elemen sebelum dan setelah pada tingkat ketiga lebih jauh ke kanan */
+}
+
+.navbar-side {
+    border:none; /* Menghapus border pada sidebar */
+    background-color: #202020; /* Menetapkan latar belakang sidebar menjadi gelap */
+}
+
+.navbar-cls-top {
+    background:#4D4D4D; /* Latar belakang navbar atas gelap */
+    border-bottom:none; /* Menghapus border bawah pada navbar atas */
+}
+
+.navbar-cls-top .navbar-brand:hover {
+    background: #C90000; /* Mengubah warna latar belakang saat hover pada logo */
+    color:#fff; /* Mengubah warna teks logo menjadi putih saat hover */
+}
+
+.navbar-default {
+    border:0px solid black; /* Menghapus border pada navbar default */
+}
+
+.navbar-header {
+    background: #A70303; /* Latar belakang navbar header merah */
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #B40101; /* Mengubah latar belakang tombol navbar toggle saat hover/focus */
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff; /* Memberikan border putih pada tombol toggle navbar */
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #FFF; /* Memberikan warna putih pada ikon toggle bar */
+}
+
+.nav > li > a > i {
+    margin-right:10px; /* Memberikan jarak antara ikon dan teks di dalam item menu */
+}
+
+/*==============================================
+    UI ELEMENTS STYLES     
+==============================================*/
+.btn-circle {
+    width: 50px; /* Menetapkan lebar tombol bulat */
+    height: 50px; /* Menetapkan tinggi tombol bulat */
+    padding: 6px 0; /* Padding dalam tombol bulat */
+    border-radius: 25px; /* Membuat tombol bulat dengan jari-jari setengah dari lebar dan tinggi */
+    text-align: center; /* Menyelaraskan teks atau ikon di tengah tombol */
+    font-size: 12px; /* Ukuran font dalam tombol bulat */
+    line-height: 1.428571429; /* Menetapkan tinggi baris dalam tombol */
+}
+
+/*==============================================
+    MEDIA QUERIES     
+==============================================*/
+@media(min-width:768px) {
+    #page-wrapper{
+        margin: 0 0 0 260px; /* Memberikan margin kiri saat ukuran layar lebih besar dari 768px */
+        padding: 15px 30px; /* Memberikan padding di dalam kontainer halaman */
+        min-height: 1200px; /* Menetapkan tinggi minimum */
+    }
+
+    .navbar-side {
+        z-index: 1; /* Menetapkan urutan lapisan navbar sidebar */
+        position: absolute; /* Mengatur posisi navbar sidebar secara absolut */
+        width: 260px; /* Menetapkan lebar navbar sidebar */
+    }
+
+    .navbar {
+        border-radius: 0px; /* Menghapus radius sudut pada navbar */
+    }
+}
