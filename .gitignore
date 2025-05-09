@@ -1,1 +1,2 @@
-*.koneksi.php
+/admin/.koneksi.php
+/user/.koneksi.php
